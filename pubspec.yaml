@@ -1,0 +1,72 @@
+name: ebutler_task
+description: A new Flutter project.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.18.2 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  cupertino_icons: ^1.0.2
+  # state management packages
+  get:
+  get_storage:
+  # loading
+  flutter_spinkit:
+  # animation & lists (tools)
+  flutter_staggered_animations: ^1.0.0
+  lazy_load_scrollview: ^1.3.0
+  # media
+  image_picker:
+  cached_network_image: ^3.1.0+1
+  # api packages
+  dio_http_cache:
+  dio:
+  # debug log
+  logger:
+  # location & map
+  location: ^4.2.0
+  google_maps_flutter:
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # clean code
+  flutter_lints: ^2.0.0
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/icons/
+    - assets/fonts/
+
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: assets/fonts/roboto/Roboto-Thin.ttf
+          weight: 200
+        - asset: assets/fonts/roboto/Roboto-Light.ttf
+          weight: 300
+        - asset: assets/fonts/roboto/Roboto-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/roboto/Roboto-Medium.ttf
+          weight: 700
+        - asset: assets/fonts/roboto/Roboto-Bold.ttf
+          weight: 800
+        - asset: assets/fonts/roboto/Roboto-Black.ttf
+          weight: 900
+
+    - family: Shalimar
+      fonts:
+        - asset: assets/fonts/shalimar/Shalimar-Regular.ttf
+
+
