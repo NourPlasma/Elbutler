@@ -11,7 +11,6 @@ import 'controllers/media/media_controller.dart';
 import 'controllers/network/api_controller.dart';
 import 'controllers/pref/pref_controller.dart';
 import 'controllers/sql/sql_controller.dart';
-import 'controllers/theme/theme_controller.dart';
 import 'controllers/utils/utils_controller.dart';
 
 
@@ -25,7 +24,6 @@ class MainBindings implements Bindings {
     Get.lazyPut(() => PrefController(), fenix: true);
     Get.lazyPut(() => LocalizationController(), fenix: true);
     Get.lazyPut(() => LogController(), fenix: true);
-    Get.lazyPut(() => ThemeController(), fenix: true);
     Get.lazyPut(() => UtilsController(), fenix: true);
     Get.lazyPut(() => AlertsController(), fenix: true);
     Get.lazyPut(() => MediaController(), fenix: true);

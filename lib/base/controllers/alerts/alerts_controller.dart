@@ -3,8 +3,6 @@ import 'package:ebutler_task/base/controllers/local/local_translations.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../../app_widgets/app_loading.dart';
-
 class AlertsController {
   //Show Get SnackBar
   void showGetSnackBar({
@@ -90,18 +88,6 @@ class AlertsController {
           size: 25,
         ),
         barBlur: 3);
-  }
-
-  // Show Loading Dialog
-  onShowLoadingDialog({String? text, bool noBack = true}) {
-    onShowCustomDialog(
-        widget: AppLoadingWidget(
-          withText: true,
-          text: text ?? AppLocalKeys.loading.tr,
-        ),
-        noBack: noBack,
-        backgroundColor: AppColors.colorWhite1,
-        borderRadius: 20);
   }
 
   //Show Normal SnackBar
